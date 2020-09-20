@@ -1,4 +1,4 @@
-def calcular_total():
+def interes_progresivo():
     ahorros = int(input('Ingresar capital inicial \n'))
     medida = str(input('Elegir [mes/año]\n'))
     if medida == 'año':
