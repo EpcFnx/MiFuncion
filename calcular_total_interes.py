@@ -26,14 +26,14 @@ def interes_progresivo():
             print(' {:^10s} {:>25s} {:>25s} {:>20s} ' .format(medida.upper(), 'INICIAL', 'INTERÉS', 'TOTAL'))
             print(dash)
         elif x < 10:
+            inicial = ahorros
             interés = ahorros * tasa_interes
             ahorros = ahorros + interés
-            inicial = ahorros - interés
-            print(' {:^10d} {:>25} {:>25} {:>20} ' .format(x, inicial, interés, ahorros))
+            print(' {:^10d} {:>25.3f} {:>25.3f} {:>20.3f} ' .format(x, inicial, interés, ahorros))
             print(dash_)
         else:
             interés = ahorros * tasa_interes
             ahorros = ahorros + interés
             inicial = ahorros - interés
-            print(' {:^10d} {:>25} {:>25} {:>20} ' .format(x, inicial, interés, ahorros))
+            print(' {:^10d} {:>25.3f} {:>25.3f} {:>20.3f} ' .format(x, inicial, interés, ahorros))
             print(dash) 
